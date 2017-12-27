@@ -1,0 +1,6 @@
+#if ($name.contains('-'))
+#set($index = $name.lastIndexOf('-') + 2)
+Asunto: ${name.substring($index)}
+#else
+Asunto: ${name.trim}
+#end
